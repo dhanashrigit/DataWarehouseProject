@@ -1,0 +1,25 @@
+timedateid,the_date,the_day,the_month,the_year,day_of_month,week_of_year,month_of_year,quarter
+1,07-01-1998 00:00,Wednesday,January,1998,7,4,1,Q1
+2,08-01-1998 00:00,Thursday,January,1998,8,4,1,Q1
+3,09-01-1998 00:00,Friday,January,1998,9,4,1,Q1
+4,10-01-1998 00:00,Saturday,January,1998,10,4,1,Q1
+5,11-01-1998 00:00,Sunday,January,1998,11,5,1,Q1
+6,13-01-1998 00:00,Tuesday,January,1998,13,5,1,Q1
+7,14-01-1998 00:00,Wednesday,January,1998,14,5,1,Q1
+8,15-01-1998 00:00,Thursday,January,1998,15,5,1,Q1
+9,16-01-1998 00:00,Friday,January,1998,16,5,1,Q1
+10,17-01-1998 00:00,Saturday,January,1998,17,5,1,Q1
+11,18-01-1998 00:00,Sunday,January,1998,18,6,1,Q1
+12,19-01-1998 00:00,Monday,January,1998,19,6,1,Q1
+13,20-01-1998 00:00,Tuesday,January,1998,20,6,1,Q1
+14,21-01-1998 00:00,Wednesday,January,1998,21,6,1,Q1
+15,22-01-1998 00:00,Thursday,January,1998,22,6,1,Q1
+16,23-01-1998 00:00,Friday,January,1998,23,6,1,Q1
+17,24-01-1998 00:00,Saturday,January,1998,24,6,1,Q1
+18,25-01-1998 00:00,Sunday,January,1998,25,7,1,Q1
+19,26-01-1998 00:00,Monday,January,1998,26,7,1,Q1
+20,27-01-1998 00:00,Tuesday,January,1998,27,7,1,Q1
+21,28-01-1998 00:00,Wednesday,January,1998,28,7,1,Q1
+22,29-01-1998 00:00,Thursday,January,1998,29,7,1,Q1
+23,30-01-1998 00:00,Friday,January,1998,30,7,1,Q1
+24,31-01-1998 00:00,Saturday,January,1998,31,7,1,Q1
