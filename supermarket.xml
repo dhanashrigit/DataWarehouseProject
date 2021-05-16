@@ -1,0 +1,44 @@
+<Schema name="Supermarket">
+  <Cube name="Sales" visible="true" cache="true" enabled="true">
+    <Table name="salesfact">
+    </Table>
+    <Dimension type="StandardDimension" visible="true" foreignKey="productid" name="Product">
+      <Hierarchy visible="true" hasAll="true">
+        <Table name="product" alias="">
+        </Table>
+        <Level name="ProductName" visible="true" column="productname" type="String" internalType="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Quantity" visible="true" column="quantity" internalType="int" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="customerid" name="Customer">
+      <Hierarchy visible="true" hasAll="true">
+        <Table name="customer" alias="">
+        </Table>
+        <Level name="CustomerName" visible="true" column="customername" internalType="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="CustomerCity" visible="true" column="city" internalType="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="timedateid" name="TimeDate">
+      <Hierarchy visible="true" hasAll="true">
+        <Table name="timedate" alias="">
+        </Table>
+        <Level name="Day" visible="false" column="the_day" type="String" internalType="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Week" visible="true" column="week_of_year" internalType="int" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Measure name="Actual Sales" column="actualsalesprice" datatype="Numeric" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Original Sales" column="originalsalesprice" datatype="Numeric" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Discount" column="discount" datatype="Integer" aggregator="distinct count" visible="true">
+    </Measure>
+    <Measure name="Profit" column="profit" datatype="Numeric" aggregator="sum" visible="true">
+    </Measure>
+  </Cube>
+</Schema>
